@@ -42,7 +42,11 @@ package main
 	// fmt.Println(resultchienese)
 	// c.String(200, resultchienese)	// c.HTML(200, "index.html", resultchienese)
 }
-  "`	package main
+
+
+```go
+
+	package main
 
 	import (
 		"fmt"
@@ -56,21 +60,6 @@ package main
 		result, _ := gt.Translate(text, "en", "es")
 		fmt.Println(result)
 		// Output: "Hola, Mundo!"
-	}`"
-  
-  
-  “`	package main
+	}
 
-	import (
-		"fmt"
-		gt "github.com/bas24/googletranslatefree"
-	)
-
-	func main(){
-		const text string = `Hello, World!`
-		// you can use "auto" for source language
-		// so, translator will detect language
-		result, _ := gt.Translate(text, "en", "es")
-		fmt.Println(result)
-		// Output: "Hola, Mundo!"
-	}”
+```
