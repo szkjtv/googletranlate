@@ -9,8 +9,8 @@ go mod init
 go mod tidy 
 
 
+```go
 //原生执行案例
-
 package main
 	import (
 		"fmt"
@@ -25,8 +25,11 @@ package main
 		// Output: "Hola, Mundo!"
 	}
   
+
+```
   
-  //gin框架执行案例  使用post方法
+```go
+//gin框架执行案例  使用post方法
 
   func Tranlate(c *gin.Context) {
 	tranlate := c.PostForm("tranlate")
@@ -43,6 +46,8 @@ package main
 	// c.String(200, resultchienese)	// c.HTML(200, "index.html", resultchienese)
 }
 
+
+```
 
 ```go
 
