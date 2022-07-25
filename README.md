@@ -10,7 +10,8 @@ go mod tidy
 
 
 //原生执行案例
-	package main
+
+package main
 
 	import (
 		"fmt"
@@ -28,6 +29,7 @@ go mod tidy
   
   
   //gin框架执行案例  使用post方法
+  
   func Tranlate(c *gin.Context) {
 	tranlate := c.PostForm("tranlate")
 	// 先把中文翻译成英文，不要这个结果
@@ -39,11 +41,9 @@ go mod tidy
 		c.JSON(200, "请输入内容再生成")
 		return
 	}
-
 	c.String(200, resultchienese)
 	// fmt.Println(resultchienese)
-	// c.String(200, resultchienese)
-	// c.HTML(200, "index.html", resultchienese)
+	// c.String(200, resultchienese)	// c.HTML(200, "index.html", resultchienese)
 }
   
   
