@@ -1,9 +1,8 @@
 # googletranlate
 
-别的项目上传到自己的github账号上当 库使用
+//别的项目上传到自己的github账号上当 库使用
 
-Install:
-go get github.com/szkjtv/googletranlate
+Install: go get github.com/szkjtv/googletranlate
 或执行 
 go mod init 
 go mod tidy 
