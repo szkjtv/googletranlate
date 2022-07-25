@@ -79,5 +79,45 @@ func main() {
 }
 
 ```
+```html
+/*html前端代码*/
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8">  
+<title>伪原创文章</title>  
+</head>  
+<body>  
+   
+                        
+    <form action="/googletranlate" method="post" class="tr">
+       
+        <br>
+        <label for="" style="margin-left: 230px;"> 输入内容: </label>
+        <!-- <input style="width: 400px;height:500px ; " type="text" name="tranlate" /> -->
+        <textarea required="required" style="width: 800px;height:500px;margin-left: 430px;" type="text" name="tranlate" rows="10" cols="30"></textarea>
+        <br>
+        
+        <input style="margin-left: 990px;height:100px;width:250px; font-size: 60px; background-color: aquamarine;color: rgb(245, 3, 3);" type="submit" value="开始原创" />
 
+        
+      </form>
+</body>  
+
+
+</html>  
+
+<style>
+    .tr{
+        /* margin-left: 500px; */
+        font-size: 20px;
+        text-align: center;
+        width: 500px;
+        /* padding:20%; */
+        /* background-color: aquamarine; */
+        color: rgb(245, 3, 3);
+        
+    }
+</style>
+```
 
