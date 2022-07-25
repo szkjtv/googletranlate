@@ -12,12 +12,10 @@ go mod tidy
 //原生执行案例
 
 package main
-
 	import (
 		"fmt"
 		gt "github.com/bas24/googletranslatefree"
 	)
-
 	func main(){
 		const text string = `Hello, World!`
 		// you can use "auto" for source language
@@ -29,14 +27,13 @@ package main
   
   
   //gin框架执行案例  使用post方法
-  
+
   func Tranlate(c *gin.Context) {
 	tranlate := c.PostForm("tranlate")
 	// 先把中文翻译成英文，不要这个结果
 	result, _ := gt.Translate(tranlate, "zh", "en")
 	// 把翻译成英文的结果，再次翻译成中文
 	resultchienese, _ := gt.Translate(result, "en", "zh")
-
 	if tranlate == "" {
 		c.JSON(200, "请输入内容再生成")
 		return
@@ -47,20 +44,3 @@ package main
 }
   
   
-  `func Tranlate(c *gin.Context) {
-	tranlate := c.PostForm("tranlate")
-	// 先把中文翻译成英文，不要这个结果
-	result, _ := gt.Translate(tranlate, "zh", "en")
-	// 把翻译成英文的结果，再次翻译成中文
-	resultchienese, _ := gt.Translate(result, "en", "zh")
-
-	if tranlate == "" {
-		c.JSON(200, "请输入内容再生成")
-		return
-	}
-
-	c.String(200, resultchienese) //接收最终结果
-	// fmt.Println(resultchienese)
-	// c.String(200, resultchienese)
-	// c.HTML(200, "index.html", resultchienese)
-}`
